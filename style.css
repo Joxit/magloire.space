@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Amazone BT';
+  font-style: normal;
+  font-weight: 400;
+  src: local('fonts/amazone-bt'),
+       local('fonts/amazone-bt'),
+       url(fonts/amazone-bt.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Politica';
+  font-style: normal;
+  font-weight: 400;
+  src: local('fonts/politica'),
+       local('fonts/politica'),
+       url(fonts/politica.ttf) format('truetype');
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Politica', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  min-width: 200px;
+  margin: auto;
+  max-width: 1024px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#follow-me {
+  transform: rotate(90deg) translate(2em);
+  width: auto;
+  display: block;
+  right: 10%;
+  position: fixed;
+  border-bottom: 1px solid #000;
+  padding: 0 20px;
+  font-size: 1.25em;
+}
+
+#follow-me img {
+  max-width: 1.1em;
+  padding: 0 0.3em;
+}
+
+#portrait {
+  align-self: center;
+  max-width: 50%;
+  bottom: 0;
+  /* cursor: pointer; */
+}
+
+.menu-portrait {
+  flex-flow: column;
+  display: flex;
+}
+#name-container {
+  padding: 4em 0;
+  text-align: center;
+}
+
+#name {
+  font-family: 'Politica';
+  font-size: 6em;
+}
+#title {
+  font-family: 'Amazone BT';
+  font-size: 4em;
+  padding: 0.25em 0;
+}
+
+#menu {
+  z-index: 10;
+  font-size: 2.5em;
+  position: absolute;
+  display: flex; /* to flex */
+  height: auto;
+}
+
+#menu span {
+  padding: 0.5em 0;
+}
+
+#menu .content {
+  width: 10em;
+  padding-top: 3em;
+}
+#menu .item {
+  padding-left: 2em;
+  padding-top: 25px;
+  display: none;
+}
+
+.menu-line-1 {
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  width: 0;
+  /* transition: width 1s; */
+}
+
+.menu-line-2 {
+  border-bottom: 3px solid #000;
+  padding: 5px 0;
+  width: 0;
+  /* transition: width 1s; */
+}
+
+.menu-line-3 {
+  border-bottom: 5px solid #000;
+  padding: 10px 0;
+  width: 0;
+  /* transition: width 1s; */
+}
