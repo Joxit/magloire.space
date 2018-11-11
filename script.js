@@ -1,5 +1,5 @@
 document.getElementById('portrait').addEventListener('click', function(e) {
-  const widths = ['75%', '100%', '90%']
+  const widths = ['65%', '90%', '80%']
   const menu = document.getElementById('menu');
   // menu.style.display = (menu.style.display == "" || menu.style.display === 'none') ? 'flex' : 'none';
 
